@@ -57,8 +57,9 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Admin\addCustomer.aspx" />
     <Content Include="Admin\insertCustomer.aspx" />
-    <Content Include="Admin\newCustomer.aspx" />
+    <Content Include="Admin\customers.aspx" />
     <Content Include="App_Data\ASPNETDB.MDF" />
     <Content Include="App_Data\aspnetdb_log.ldf">
       <DependentUpon>ASPNETDB.MDF</DependentUpon>
@@ -83,6 +84,13 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin\addCustomer.aspx.cs">
+      <DependentUpon>addCustomer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\addCustomer.aspx.designer.cs">
+      <DependentUpon>addCustomer.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\insertCustomer.aspx.cs">
       <DependentUpon>insertCustomer.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -90,12 +98,12 @@
     <Compile Include="Admin\insertCustomer.aspx.designer.cs">
       <DependentUpon>insertCustomer.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Admin\newCustomer.aspx.cs">
-      <DependentUpon>newCustomer.aspx</DependentUpon>
+    <Compile Include="Admin\customers.aspx.cs">
+      <DependentUpon>customers.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Admin\newCustomer.aspx.designer.cs">
-      <DependentUpon>newCustomer.aspx</DependentUpon>
+    <Compile Include="Admin\customers.aspx.designer.cs">
+      <DependentUpon>customers.aspx</DependentUpon>
     </Compile>
     <Compile Include="DataSet1.cs">
       <DependentUpon>DataSet1.xsd</DependentUpon>
